@@ -1,0 +1,119 @@
+body {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    background-color: #2ab7ca;
+    padding: 50px 0px;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.sub {
+    font-size: 18px;
+    margin: 0px 0px 30px;
+}
+
+.input {
+    padding: 10px 0px;
+}
+
+.input input[type=text] {
+    width: 80%;
+    padding-left: 15px;
+    height: 76px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    vertical-align: middle;
+}
+
+.input input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.add {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: rgb(230, 230, 230);
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+ul li.checked:before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+ul li:nth-child(odd){
+    background: #f9f9f9;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+    background-color: rgb(247, 51, 51);
+    color: white;
+    font-weight: bold;
+}
